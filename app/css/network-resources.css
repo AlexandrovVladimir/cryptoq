@@ -1,0 +1,16 @@
+.network-resources {
+  background-color: #fff; }
+
+.network-resources-info {
+  background-color: transparent; }
+  .network-resources-info .table-operations tbody td .position-center img {
+    width: 45px;
+    margin-right: 0.5rem; }
+  .network-resources-info .table-operations tbody td div {
+    min-height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }

@@ -1,0 +1,98 @@
+/* default styles for all pages */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+@import 'main-page.sass'
+@import 'accaunt.sass'
+@import 'network-resources.sass'
+@import 'questions.sass'
+@import 'conditions.sass'
+@import 'contacts.sass'
+@import 'exchange.sass'
+@import 'feedbacks.sass'
+@import 'sidebar.sass'
+
+*
+  box-sizing: border-box
+  &:hover, &:active, &:focus
+      outline: none
+
+html
+  font-family: $default-font, Helvetica, Arial, sans-serif
+  font-size: 16px
+  //min-height: 100%
+body
+  margin: 0
+  padding: 0
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+select::-ms-expand
+  display: none
+
+a
+  text-decoration: none
+  transition: all 0.3s linear
+
+section
+  position: relative
+
+.table
+  margin-bottom: 0
+
+.title
+  color: $default
+  font-family: $default-font
+  font-size: 32px
+  margin: 53.5px 0 35.5px
+  text-align: center
+  text-transform: uppercase
+
+.sub-title
+  color: $default
+  font-family: $default-font
+  font-size: 24px
+  margin: 53.5px 0 35.5px
+  text-align: center
+  text-transform: uppercase
+
+.breadcrumbs
+  display: flex
+  flex-wrap: wrap
+  padding-top: 8px
+  &__item
+    + .breadcrumbs__item
+      &:before
+        color: #b4b4b4
+        font-family: $default-font
+        padding: 0 0.8rem
+  &__link
+    color: #b4b4b4
+    font-family: $default-font
+    display: inline-block
+    position: relative
+    letter-spacing: 0.5px
+    &.active
+      color: #5a9ff8
+    &:hover
+      color: #5a9ff8
+      text-decoration: none
+
+::placeholder
+  color: #fdfdfd
+  opacity: 1 /* Firefox */
+
+::-ms-input-placeholder  /* Internet Explorer 10-11 */
+   color: #fdfdfd
+
+::-ms-input-placeholder  /* Microsoft Edge */
+   color: #fdfdfd

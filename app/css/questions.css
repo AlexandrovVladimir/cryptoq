@@ -1,0 +1,27 @@
+.questions__row .questions-info {
+  display: none;
+  background: #f9f9f9;
+  border: 1px solid #fff;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  font-family: HelveticaNeueCyr, sans-serif;
+  margin-top: 0.5rem;
+  padding: 1rem; }
+
+.questions__row:not(:first-child) {
+  margin-top: 1.5rem; }
+
+.questions__text {
+  display: block;
+  background: #fff url("../img/tilda.png") no-repeat 98% center;
+  border: 1px solid transoarent;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  cursor: pointer;
+  font-family: HelveticaNeueCyr, sans-serif;
+  padding: 1rem 50px 1rem 1rem;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+  .questions__text:hover {
+    background-color: #f9f9f9; }

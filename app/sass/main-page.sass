@@ -1,0 +1,383 @@
+@import 'vars'
+
+body
+	background: url(../img/body-bg.png) #f5f5f5 repeat
+	position: relative
+	z-index: 5
+.header
+	background: url(../img/body-bg.png) #ffffff
+	background-size: cover
+	z-index: 0
+	position: relative
+	overflow: hidden
+	&-container
+		&:after
+			content: ''
+			position: absolute
+			left: 100%
+			top: 0
+			width: 100%
+			height: 65px
+			background: $default
+			z-index: 2
+	&-wrap
+		padding: 0
+	.header-part
+		background: $default
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: flex-start
+		flex: 0 0 calc(100% - 200px)
+		max-width: calc(100% - 200px)
+		width: calc(100% - 200px)
+	.header-center
+		display: flex
+		align-center: center
+		flex-wrap: wrap
+		justify-content: flex-start
+	.header-logo
+		flex: 0 0 200px
+		max-width: 200px
+		&__link
+			display: flex
+			height: 100%
+			align-items: center
+			justify-content: flex-start
+	.header-nav
+		height: 65px
+		flex-shrink: 1
+		display: flex
+		align-items: center
+		padding-left: 25px
+		&__item
+			display: inline-block
+			margin-right: 40px
+			&:last-child
+				margin-right: 0
+		&__link
+			display: block
+			font-size: 16px
+			font-family: $default-font
+			color: #fff
+	.header-social
+		justify-self: center
+		margin: auto
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&__link
+			font-family: $default-font
+			&:hover
+				text-decoration: none
+			img
+				margin-right: 10px
+			span
+				color: #fff
+				font-family: $default-font
+				font-size: 16px
+		&__item
+			&:first-child
+				margin-right: 40px
+	&__link
+		display: flex
+		align-items: center
+		justify-content: center
+		text-transform: uppercase
+		border-radius: 23px
+		background-color: #5a9ff8
+		color: #fff
+		font-family: $default-font
+		font-size: 18px
+		padding: 0 35px
+		height: 45px
+		&:hover
+			color: #fff
+			text-decoration: none
+	.header-login
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		&__part
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			flex-wrap: wrap
+			&:hover
+				text-decoration: none
+		&__name
+			color: #ffffff
+			font-family: $default-font
+			display: inline-block
+			margin: 0 7.5px
+.main-content
+	background-color: #f5f5f5
+	&-wrap
+		padding: 0
+		display: flex
+		flex-wrap: wrap
+	&__title
+		color: $default
+		font-family: $default-font
+		font-size: 32px
+		margin: 53.5px 0 35.5px
+		text-align: center
+		text-transform: uppercase
+		flex: 0 0 100%
+		max-width: 100%
+.columns
+	background-color: #fff
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	padding-bottom: 50px
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+		width: 100%
+	&__btn
+		background: $default
+		border-radius: 23px
+		color: #fff
+		display: inline-block
+		margin: 32.5px auto 0
+		padding: 10px 100px
+		text-transform: uppercase
+		&:hover
+			color: #fff
+			text-decoration: none
+	&__icon
+		width: 60px
+		height: 60px
+		margin-top: 68px
+		&-center
+			width: 30px
+			height: 30px
+			margin-top: 100.5px
+	.columns-give
+		flex: 0 0 calc(50% - 60px)
+		max-width: calc(50% - 60px)
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		padding-top: 25px
+		padding-left: 60px
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+			width: calc(50% - 60px)
+		.columns-wrap
+			flex: 0 0 calc(100% - 60px)
+			max-width: calc(100% - 60px)
+			padding-left: 23px
+			padding-right: 10.5px
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+				width: calc(100% - 60px)
+		&__row
+			position: relative
+			&:after
+				color: #b4b4b4
+				font-family: $default-font
+				content: 'BTC'
+				position: absolute
+				top: 11.5px
+				left: 87.5%
+		&__title
+			flex: 0 0 calc(100% - 60px)
+			max-width: calc(100% - 60px)
+			text-transform: uppercase
+			margin-bottom: 25px
+			margin-top: 18px
+		&__select
+			background: url(../img/select.png) no-repeat 95% center
+			border: 1px solid rgb( 65, 140, 239 )
+			border-radius: 23px
+			color: rgb( 94, 94, 94 )
+			height: 45px
+			flex: 0 0 100%
+			font-family: $default-font
+			max-width: 100%
+			width: 100%
+			margin-bottom: 30px
+			padding: 10px 20px
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+				width: 100%
+		&__input
+			border: 1px solid #b4b4b4
+			border-radius: 23px
+			color: rgb( 94, 94, 94 )
+			height: 45px
+			flex: 0 0 100%
+			font-family: $default-font
+			max-width: 100%
+			width: 100%
+			padding: 10px 20px
+			margin-bottom: 25px
+			&:focus
+				border-color: rgb( 65, 140, 239 )
+	.columns-get
+		flex: 0 0 calc(50% - 60px)
+		max-width: calc(50% - 60px)
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		padding-top: 25px
+		padding-right: 60px
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+			width: calc(50% - 60px)
+		.columns-wrap
+			flex: 0 0 calc(100% - 60px)
+			max-width: calc(100% - 60px)
+			padding-right: 23px
+			padding-left: 10.5px
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+				width: calc(100% - 60px)
+		&__row
+			position: relative
+			&:after
+				color: #b4b4b4
+				font-family: $default-font
+				content: 'USD'
+				position: absolute
+				top: 11.5px
+				left: 87.5%
+		&__title
+			font-family: $default-font
+			flex: 0 0 calc(100% - 60px)
+			max-width: calc(100% - 60px)
+			text-transform: uppercase
+			margin-bottom: 25px
+			margin-top: 18px
+		&__select
+			background: url(../img/select.png) no-repeat 95% center
+			border: 1px solid rgb( 65, 140, 239 )
+			border-radius: 23px
+			color: rgb( 94, 94, 94 )
+			height: 45px
+			font-family: $default-font
+			flex: 0 0 100%
+			max-width: 100%
+			width: 100%
+			margin-bottom: 30px
+			padding: 10px 20px
+		&__input
+			border: 1px solid #b4b4b4
+			border-radius: 23px
+			color: rgb( 94, 94, 94 )
+			height: 45px
+			flex: 0 0 100%
+			max-width: 100%
+			font-family: $default-font
+			width: 100%
+			padding: 10px 20px
+			margin-bottom: 25px
+			&:focus
+				border-color: rgb( 65, 140, 239 )
+		&__info
+			font-family: $default-font
+			flex: 0 0 100%
+			font-size: 17px
+			max-width: 100%
+			padding-left: 10.5px
+			padding-top: 7.5px
+			span
+				color: $default
+		&__text
+			&:first-child
+				margin-bottom: 1rem
+
+.sub-content
+	background-color: #f5f5f5
+	padding-bottom: 80px
+	&-wrap
+		padding: 0
+.works
+	background-color: #fff
+	padding: 40px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item
+		flex: 0 0 calc(100% / 3)
+		max-width: calc(100% / 3)
+		padding-left: 85px
+		min-height: 85px
+		&:nth-child(1)
+			background: url(../img/vector1.png) no-repeat 0 0
+		&:nth-child(2)
+			background: url(../img/vector2.png) no-repeat 0 0
+		&:nth-child(3)
+			background: url(../img/vector3.png) no-repeat 0 0
+	&__title
+		color: $default
+		font-family: $default-font
+		font-size: 16px
+		line-height: 1.5
+		text-transform: uppercase
+	&__description
+		font-size: 16px
+		margin-top: 10px
+		line-height: 1.4
+
+.footer
+	background: $default
+	padding: 22px 0
+	&-wrap
+		padding: 0
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+	.footer-logo
+		display: flex
+		&_white
+			display: inline-block
+			color: #fff
+			font-size: 40px
+			font-family: $default-font-black
+			font-weight: bold
+		&_blue
+			display: inline-block
+			color: #5a9ff8
+			font-size: 40px
+			font-family: $default-font-black
+			font-weight: bold
+		&:hover
+			text-decoration: none
+	.footer-center
+		justify-self: center
+		margin: auto
+		display: flex
+		flex-wrap: wrap
+		&__schedule
+			padding-right: 25px
+			span
+				color: #fff
+				font-size: 16px
+				font-family: $default-font
+				display: block
+		&__social
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: flex-start
+			padding-left: 25px
+			span
+				flex: 0 0 120px
+				max-width: 120px
+				color: #fff
+				font-size: 16px
+				font-family: $default-font
+				display: block
+				margin-right: 1rem
+				display: inline-block
+			img
+				margin-right: 1rem
+	&__anchor
+		background-color: #418cef
+		border-radius: 5px
+  	width: 46px
+  	height: 46px
+  	display: flex
+		align-items: center
+		justify-content: center
+		padding: 11px 18px
+		margin-right: 6px
+		

@@ -1,0 +1,67 @@
+@import 'vars'
+
+.feedbacks
+	&__row
+		background-color: #fff
+		display: flex
+		flex-wrap: wrap
+		padding: 1rem
+		margin-bottom: 25px
+	.feedbacks-top,
+	.feedbacks-bottom
+		flex: 0 0 100%
+		max-width: 100%
+	.feedbacks-top
+		background: url('../img/quote.png') no-repeat right top
+		border-bottom: 1px solid #5a9ff8
+		display: flex
+		align-items: center	
+		padding-bottom: 1rem
+	.feedbacks-bottom
+		padding-top: 1rem
+	&__name
+		border-right: 1px solid #d2d2d2
+		font-size: 16px
+		font-family: $default-font
+		padding-right: 1rem
+		text-transform: uppercase
+	&__date
+		line-height: 1
+		img
+			margin: 0 1rem
+		span
+			color: #d2d2d2
+			font-size: 14px
+			font-family: $default-font
+	&__text
+		font-family: $default-font
+	.feedbacks-pagination
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-wrap: wrap
+		&__item
+			margin: 10px
+			&_arrow
+				cursor: pointer
+				color: #5a9ff8
+				transition: all 0.3s linear
+				&:hover
+					opacity: 0.6
+		&__link
+			border: 1px solid transparent
+			line-height: 1
+			display: block
+			padding: 4px 8px
+			&_active
+				background: #e8f2ff
+				border: 1px solid #5a9ff8
+				color: #5a9ff8
+				padding: 4px 8px
+			&:hover
+				background: #e8f2ff
+				border: 1px solid #5a9ff8
+				color: #5a9ff8
+				text-decoration: none
+				
+		

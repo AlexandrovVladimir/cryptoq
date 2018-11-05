@@ -1,0 +1,87 @@
+.feedbacks__row {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 25px; }
+
+.feedbacks .feedbacks-top,
+.feedbacks .feedbacks-bottom {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%; }
+
+.feedbacks .feedbacks-top {
+  background: url("../img/quote.png") no-repeat right top;
+  border-bottom: 1px solid #5a9ff8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem; }
+
+.feedbacks .feedbacks-bottom {
+  padding-top: 1rem; }
+
+.feedbacks__name {
+  border-right: 1px solid #d2d2d2;
+  font-size: 16px;
+  font-family: HelveticaNeueCyr, sans-serif;
+  padding-right: 1rem;
+  text-transform: uppercase; }
+
+.feedbacks__date {
+  line-height: 1; }
+  .feedbacks__date img {
+    margin: 0 1rem; }
+  .feedbacks__date span {
+    color: #d2d2d2;
+    font-size: 14px;
+    font-family: HelveticaNeueCyr, sans-serif; }
+
+.feedbacks__text {
+  font-family: HelveticaNeueCyr, sans-serif; }
+
+.feedbacks .feedbacks-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .feedbacks .feedbacks-pagination__item {
+    margin: 10px; }
+    .feedbacks .feedbacks-pagination__item_arrow {
+      cursor: pointer;
+      color: #5a9ff8;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .feedbacks .feedbacks-pagination__item_arrow:hover {
+        opacity: 0.6; }
+  .feedbacks .feedbacks-pagination__link {
+    border: 1px solid transparent;
+    line-height: 1;
+    display: block;
+    padding: 4px 8px; }
+    .feedbacks .feedbacks-pagination__link_active {
+      background: #e8f2ff;
+      border: 1px solid #5a9ff8;
+      color: #5a9ff8;
+      padding: 4px 8px; }
+    .feedbacks .feedbacks-pagination__link:hover {
+      background: #e8f2ff;
+      border: 1px solid #5a9ff8;
+      color: #5a9ff8;
+      text-decoration: none; }

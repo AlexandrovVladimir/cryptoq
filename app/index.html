@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная страница</title>
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta property="og:image" content="img/favicon/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container header-container">
+      <div class="row">
+        <div class="col-12 header-wrap">
+          <div class="header-center">
+            <div class="header-logo">
+              <a href="" class="header-logo__link">
+                <img src="img/logo2.png" alt="logo" class="header-logo__icon">
+              </a>
+            </div>
+            <div class="header-part">
+              <ul class="header-nav">
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__link">Главная</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__link">Отзывы</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="header-social">
+                <li class="header-social__item">
+                  <a href="mailto: support@btc.ua" class="header-social__link">
+                    <img src="img/header-mail.png" alt="mail"><span class="header-social__text">support@btc.ua</span>
+                  </a>
+                </li>
+                <li class="header-social__item">
+                  <a href="tel: +38 (068)-524-20-20" class="header-social__link">
+                    <img src="img/header-tel.png" alt="mail"><span class="header-social__text">+38 (068)-524-20-20</span>
+                  </a>
+                </li>   
+              </ul>
+              <a href="" class="header__link">вход</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 main-content-wrap">
+          <h2 class="main-content__title title">CRYPTO обмен</h2>
+          <div class="main-content__columns columns">
+            <div class="columns-give">
+              <img src="img/icon1.png" class="columns__icon" alt="bitcoin">
+              <div action="" class="columns-wrap">
+                <div class="columns-give__title">
+                  Вы отдаете
+                </div>
+                <select name="" id="bitcoin-give" class="columns-give__select">
+                  <option value="">Bitcoin BTC</option>
+                  <option value="">Bitcoin</option>
+                </select>
+                <div class="columns-give__row">
+                  <input type="text" value="1" class="columns-give__input">
+                </div>
+                <label for="comission-give" class="columns-give__label">С комиссией:</label>
+                <div class="columns-give__row">
+                  <input type="text" id="comission-give" value="1" class="columns-give__input">
+                </div>
+              </div>
+            </div>
+            <img src="img/icon-switch.png" class="columns__icon columns__icon-center" alt="switch currency">
+            <div class="columns-get">
+              <div action="" class="columns-wrap">
+                <div class="columns-get__title">
+                  Вы получаете
+                </div>
+                <select name="" id="bitcoin-get" class="columns-get__select">
+                  <option value="">Bitcoin BTC</option>
+                  <option value="">Bitcoin</option>
+                </select>
+                <div class="columns-get__row">
+                  <input type="text" value="1" class="columns-get__input">
+                </div>
+
+                <label for="comission-get" class="columns-get__label">С комиссией:</label>
+                <div class="columns-get__row">
+                  <input type="text" id="comission-get" value="1" class="columns-get__input">
+                </div>
+              </div>
+              <img src="img/icon2.png" class="columns__icon" alt="USD">
+              <div class="columns-get__info">
+                <div class="columns-get__text">Курс обмена: <span>1</span> BTC = <span>6910.293</span> USD</div>
+                <div class="columns-get__text">Резерв: 50000 USD</div>
+              </div>
+            </div>
+            <a href="#" class="columns__btn">Обменять сейчас</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 sub-content-wrap">
+          <h3 class="sub-content__title sub-title">
+            Как это работает
+          </h3>
+          <div class="sub-content-works works">
+            <div class="works__item">
+              <div class="works__title">Оформите заявку</div>
+              <div class="works__description">
+                Выберите направление обмена и заполните Ваши данные
+              </div>
+            </div>
+            <div class="works__item">
+              <div class="works__title">Дождитесь ответа</div>
+              <div class="works__description">
+                Система произведет обмен в течении 1 минуты
+              </div>
+            </div>
+            <div class="works__item">
+              <div class="works__title">Получите ваши средства</div>
+              <div class="works__description">
+                На платежную карту банка или крипто кошелек
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 footer-wrap">
+          <a href="" class="footer-logo">
+            <span class="footer-logo_white">LO</span>
+            <span class="footer-logo_blue">GO</span>
+          </a>
+          <div class="footer-center">
+            <div class="footer-center__schedule">
+              <span>Пн. — Пт. с 10:00 до 17:00.</span>
+              <span>Сб. — Вс. свободный график.</span>
+            </div>
+            <div class="footer-center__social">
+              <span>Каналы в мессенджерах:</span>
+              <div class="footer-center__social-images">
+                <a href=""><img src="img/telegram.png" alt="telegram"></a>
+                <a href=""><img src="img/viber.png" alt="viber"></a>
+                <a href=""><img src="img/whatsup.png" alt="whatsup"></a>
+              </div>
+            </div>
+          </div>
+          <a href="" id="anchor" class="footer__anchor">
+            <img src="img/anchor.png" alt="anchor">
+          </a> 
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

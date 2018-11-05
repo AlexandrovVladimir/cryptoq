@@ -1,0 +1,99 @@
+.exchange-page {
+  margin-top: 55px; }
+  .exchange-page .operations-sales__row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .exchange-page .operations-sales__icon {
+    border: none;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60px;
+            flex: 0 0 60px;
+    max-width: 60px; }
+  .exchange-page .operations-sales__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 60px);
+            flex: 0 0 calc(100% - 60px);
+    max-width: calc(100% - 60px);
+    padding: 0 1rem; }
+  .exchange-page .operations-sales__attention {
+    color: #5e5e5e;
+    font-family: HelveticaNeueCyr, sans-serif;
+    font-size: 25px;
+    line-height: 1;
+    text-transform: uppercase; }
+  .exchange-page .operations-sales__text {
+    color: #5e5e5e;
+    font-family: HelveticaNeueCyr, sans-serif;
+    margin-top: 1rem; }
+
+.exchange {
+  background-color: #fff;
+  padding: 25px; }
+  .exchange:not(:first-child) {
+    margin-bottom: 25px; }
+  .exchange__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .exchange__row_personal {
+      margin-bottom: 1rem; }
+      .exchange__row_personal:last-child {
+        margin-bottom: 0; }
+      .exchange__row_personal label {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%; }
+      .exchange__row_personal input {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 360px; }
+  .exchange__input, .exchange__select {
+    border: 1px solid #b4b4b4;
+    border-radius: 23px;
+    color: #5e5e5e;
+    display: inline-block;
+    font-family: HelveticaNeueCyr, sans-serif;
+    height: 46px;
+    padding: 10px 19px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 360px;
+            flex: 0 0 360px;
+    max-width: 360px; }
+    .exchange__input:focus, .exchange__select:focus {
+      border: 1px solid #418cef; }
+  .exchange__select {
+    background: url(../img/select.png) no-repeat 95% center; }
+  .exchange__link {
+    background-color: #3068b3;
+    color: #fff;
+    font-family: HelveticaNeueCyr, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    width: 200px;
+    border-radius: 23px;
+    height: 45px;
+    margin-top: 25px; }
+    .exchange__link:hover {
+      color: #fff;
+      text-decoration: none; }
+  .exchange .rules {
+    margin-top: 1rem; }
