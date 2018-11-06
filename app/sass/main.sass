@@ -56,7 +56,9 @@ section
   margin: 53.5px 0 35.5px
   text-align: center
   text-transform: uppercase
-
+  @media screen and (max-width: 767px)
+    font-size: 24px
+    margin: 25px 0 25px
 .sub-title
   color: $default
   font-family: $default-font
@@ -64,7 +66,13 @@ section
   margin: 53.5px 0 35.5px
   text-align: center
   text-transform: uppercase
-
+  @media screen and (max-width: 767px)
+    font-size: 18px
+    margin: 25px 0 25px
+    
+table
+  background-color: #fff
+  
 .breadcrumbs
   display: flex
   flex-wrap: wrap

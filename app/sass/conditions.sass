@@ -3,6 +3,8 @@
 .conditions
 	background-color: #fff
 	padding: 50px
+	@media screen and (max-width: 767px)
+		padding: 1rem
 	&__paragraph
 		display: flex
 		justify-content: flex-start
@@ -19,10 +21,20 @@
 		align-items: center
 		justify-content: center
 		text-align: center
+		@media screen and (max-width: 767px)
+			font-size: 14px
+			height: 20px
+			flex: 0 0 20px
+			max-width: 20px
+	&__text
+		@media screen and (max-width: 767px)
+			font-size: 14px
 	.conditions-list
 		padding-left: 45px
 		span
 			padding: 5px
+			@media screen and (max-width: 767px)
+				font-size: 12px
 		img
 			margin-right: 5px
 			transform: translateY(-1.5px)

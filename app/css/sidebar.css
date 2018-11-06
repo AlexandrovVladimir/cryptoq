@@ -2,6 +2,9 @@
   margin-top: 54px; }
   .sidebar .content-form__title {
     padding-left: 1.5rem; }
+    @media screen and (max-width: 767px) {
+      .sidebar .content-form__title {
+        padding: 10px 1rem; } }
   .sidebar__discount {
     background-color: #fff;
     padding: 1.5rem;
@@ -55,6 +58,9 @@
 .authorize {
   background-color: #fff;
   padding: 2rem; }
+  @media screen and (max-width: 767px) {
+    .authorize {
+      padding: 1rem; } }
   .authorize__row {
     margin-bottom: 25px; }
     .authorize__row_links {
@@ -74,7 +80,7 @@
       border: 1px solid #418cef; }
   .authorize__link {
     color: #5a9ff8; }
-  .authorize__enter {
+  .authorize__enter, .authorize__clear {
     background-color: #3068b3;
     color: #fff;
     font-family: HelveticaNeueCyr, sans-serif;
@@ -88,13 +94,16 @@
         -ms-flex-pack: center;
             justify-content: center;
     text-transform: uppercase;
-    width: 200px;
+    max-width: 200px;
     border-radius: 23px;
     height: 45px;
     margin-top: 25px; }
-    .authorize__enter:hover {
+    .authorize__enter:hover, .authorize__clear:hover {
       color: #fff;
       text-decoration: none; }
+  .authorize__clear {
+    background-color: #e7e7e7;
+    color: #3068b3; }
 
 .rules .rules-container {
   display: block;

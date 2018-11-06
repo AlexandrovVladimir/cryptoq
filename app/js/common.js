@@ -13,5 +13,9 @@ $(document).ready(function (){
 
   $('.questions__text').on('click', function() {
     $(this).next().toggle();
-  })
+  });
+
+  $('.navbar-mobile').on('click', function() {
+    $(this).closest('.navbar-mobile').find('.navbar-collapse').toggleClass('show');
+  });
 });

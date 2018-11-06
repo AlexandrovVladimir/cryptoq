@@ -7,6 +7,9 @@
   font-family: HelveticaNeueCyr, sans-serif;
   margin-top: 0.5rem;
   padding: 1rem; }
+  @media screen and (max-width: 767px) {
+    .questions__row .questions-info__text {
+      font-size: 14px; } }
 
 .questions__row:not(:first-child) {
   margin-top: 1.5rem; }
@@ -14,7 +17,7 @@
 .questions__text {
   display: block;
   background: #fff url("../img/tilda.png") no-repeat 98% center;
-  border: 1px solid transoarent;
+  border: 1px solid transparent;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   cursor: pointer;
@@ -25,3 +28,6 @@
   transition: all 0.5s linear; }
   .questions__text:hover {
     background-color: #f9f9f9; }
+  @media screen and (max-width: 767px) {
+    .questions__text {
+      font-size: 14px; } }

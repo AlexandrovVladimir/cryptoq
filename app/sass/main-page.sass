@@ -7,10 +7,27 @@ body
 .header
 	background: url(../img/body-bg.png) #ffffff
 	background-size: cover
-	z-index: 0
 	position: relative
-	overflow: hidden
+	@media screen and (max-width: 767px)
+		padding: 0 1rem
+	@media screen and (min-width: 768px)
+		z-index: 0
+		overflow: hidden
+	&:after
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		width: 50%
+		height: 65px
+		background: $default
+		z-index: 2
+		@media screen and (max-width: 767px)
+			height: 100%
+			min-height: 50px
 	&-container
+		position: relative
+		z-index: 3
 		&:after
 			content: ''
 			position: absolute
@@ -20,6 +37,10 @@ body
 			height: 65px
 			background: $default
 			z-index: 2
+			@media screen and (max-width: 767px)
+				height: 100%
+				min-height: 50px
+				display: none
 	&-wrap
 		padding: 0
 	.header-part
@@ -31,25 +52,42 @@ body
 		flex: 0 0 calc(100% - 200px)
 		max-width: calc(100% - 200px)
 		width: calc(100% - 200px)
+		@media screen and (max-width: 767px)
+			flex: 0 0 calc(100% - 100px)
+			max-width: calc(100% - 100px)
+			justify-content: space-between
+			align-items: center
+			height: 100%
+			min-height: 50px
+			padding: 1rem 0
 	.header-center
 		display: flex
-		align-center: center
+		align-items: center
 		flex-wrap: wrap
 		justify-content: flex-start
 	.header-logo
 		flex: 0 0 200px
 		max-width: 200px
+		@media screen and (max-width: 767px)
+			flex: 0 0 100px
+			max-width: 100px
+			padding-right: 1rem
 		&__link
 			display: flex
 			height: 100%
 			align-items: center
 			justify-content: flex-start
+			@media screen and (max-width: 767px)
+				img
+					width: 100%
 	.header-nav
 		height: 65px
 		flex-shrink: 1
 		display: flex
 		align-items: center
 		padding-left: 25px
+		@media screen and (max-width: 767px)
+			display: none
 		&__item
 			display: inline-block
 			margin-right: 40px
@@ -60,18 +98,66 @@ body
 			font-size: 16px
 			font-family: $default-font
 			color: #fff
+	.navbar-mobile
+		display: none
+		padding: 0 1rem
+		.navbar-toggler-icon
+			width: 20px
+			height: 20px
+		.navbar-collapse
+			@media screen and (max-width: 767px)
+				position: absolute
+				background-color: #f5f5f5
+				top: 100%
+				margin-top: 1.2rem
+				z-index: 1
+		button
+			width: 20px
+			height: 20px
+			padding: 0
+			&:focus, &:hover, &:active
+				outline: none
+			i
+				color: #fff
+		@media screen and (max-width: 767px)
+			display: block
+	.header-nav-mobile
+		border: 1px solid #3068b3
+		border-top: none
+		border-bottom-left-radius: 6px
+		border-bottom-right-radius: 6px
+		padding: 0.5rem
+		&__item
+			margin-bottom: 5px
+		&__link
+			color: #3068b3
+			font-size: 14px
+			display: block
+			font-family: $default-font
 	.header-social
 		justify-self: center
 		margin: auto
 		display: flex
 		align-items: center
 		justify-content: space-between
+		@media screen and (max-width: 767px)
+			margin: 0
+		&__text
+			@media screen and (max-width: 1199px)
+				display: none
 		&__link
 			font-family: $default-font
+			height: 25px
+			display: flex
+			align-items: center
+			justify-content: center
 			&:hover
 				text-decoration: none
 			img
 				margin-right: 10px
+				@media screen and (max-width: 767px)
+					margin-right: 0
+					width: 100%
 			span
 				color: #fff
 				font-family: $default-font
@@ -79,6 +165,10 @@ body
 		&__item
 			&:first-child
 				margin-right: 40px
+				@media screen and (max-width: 991px)
+					margin-right: 1rem
+			@media screen and (max-width: 991px)
+				height: 25px
 	&__link
 		display: flex
 		align-items: center
@@ -94,6 +184,12 @@ body
 		&:hover
 			color: #fff
 			text-decoration: none
+		@media screen and (max-width: 767px)
+			font-size: 14px
+			height: 30px
+			padding: 0 1rem
+		@media screen and (max-width: 580px)
+			font-size: 10px
 	.header-login
 		display: flex
 		align-items: center
@@ -106,13 +202,23 @@ body
 			flex-wrap: wrap
 			&:hover
 				text-decoration: none
+			@media screen and (max-width: 580px)
+				img
+					margin: 0 1rem
 		&__name
 			color: #ffffff
 			font-family: $default-font
 			display: inline-block
 			margin: 0 7.5px
+			@media screen and (max-width: 580px)
+				display: none
+		&__logout
+			img
+				width: 25px
 .main-content
 	background-color: #f5f5f5
+	@media screen and (max-width: 767px)
+		padding: 0 1rem
 	&-wrap
 		padding: 0
 		display: flex
@@ -145,10 +251,14 @@ body
 		&:hover
 			color: #fff
 			text-decoration: none
+		@media screen and (max-width: 767px)
+			padding: 10px 1rem
 	&__icon
 		width: 60px
 		height: 60px
 		margin-top: 68px
+		@media screen and (max-width: 991px)
+			display: none
 		&-center
 			width: 30px
 			height: 30px
@@ -163,6 +273,15 @@ body
 		padding-left: 60px
 		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
 			width: calc(50% - 60px)
+		@media screen and (max-width: 991px)
+			padding-left: 25px
+			padding-right: 0.5rem
+			flex: 0 0 50%
+			max-width: 50%
+		@media screen and (max-width: 767px)
+			flex: 0 0 100%
+			max-width: 100%
+			padding: 0 1rem
 		.columns-wrap
 			flex: 0 0 calc(100% - 60px)
 			max-width: calc(100% - 60px)
@@ -170,6 +289,10 @@ body
 			padding-right: 10.5px
 			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
 				width: calc(100% - 60px)
+			@media screen and (max-width: 991px)
+				flex: 0 0 100%
+				max-width: 100%
+				padding: 0
 		&__row
 			position: relative
 			&:after
@@ -179,12 +302,18 @@ body
 				position: absolute
 				top: 11.5px
 				left: 87.5%
+				@media screen and (max-width: 1199px)
+					left: 82.5%
 		&__title
+			font-family: $default-font
 			flex: 0 0 calc(100% - 60px)
 			max-width: calc(100% - 60px)
 			text-transform: uppercase
 			margin-bottom: 25px
 			margin-top: 18px
+			@media screen and (max-width: 991px)
+				flex: 0 0 100%
+				max-width: 100%
 		&__select
 			background: url(../img/select.png) no-repeat 95% center
 			border: 1px solid rgb( 65, 140, 239 )
@@ -222,6 +351,15 @@ body
 		padding-right: 60px
 		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
 			width: calc(50% - 60px)
+		@media screen and (max-width: 991px)
+			padding-right: 25px
+			padding-left: 0.5rem
+			flex: 0 0 50%
+			max-width: 50%
+		@media screen and (max-width: 767px)
+			flex: 0 0 100%
+			max-width: 100%
+			padding: 0 1rem
 		.columns-wrap
 			flex: 0 0 calc(100% - 60px)
 			max-width: calc(100% - 60px)
@@ -229,6 +367,10 @@ body
 			padding-left: 10.5px
 			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
 				width: calc(100% - 60px)
+			@media screen and (max-width: 991px)
+				flex: 0 0 100%
+				max-width: 100%
+				padding: 0
 		&__row
 			position: relative
 			&:after
@@ -238,6 +380,8 @@ body
 				position: absolute
 				top: 11.5px
 				left: 87.5%
+				@media screen and (max-width: 1199px)
+					left: 82.5%
 		&__title
 			font-family: $default-font
 			flex: 0 0 calc(100% - 60px)
@@ -245,6 +389,9 @@ body
 			text-transform: uppercase
 			margin-bottom: 25px
 			margin-top: 18px
+			@media screen and (max-width: 991px)
+				flex: 0 0 100%
+				max-width: 100%
 		&__select
 			background: url(../img/select.png) no-repeat 95% center
 			border: 1px solid rgb( 65, 140, 239 )
@@ -280,20 +427,27 @@ body
 			span
 				color: $default
 		&__text
+			font-family: $default-font
 			&:first-child
 				margin-bottom: 1rem
+			@media screen and (max-width: 767px)
+				font-size: 14px
 
 .sub-content
 	background-color: #f5f5f5
 	padding-bottom: 80px
 	&-wrap
 		padding: 0
+		@media screen and (max-width: 767px)
+			padding: 0 1rem
 .works
 	background-color: #fff
 	padding: 40px
 	display: flex
 	justify-content: space-between
 	flex-wrap: wrap
+	@media screen and (max-width: 767px)
+		padding: 1rem
 	&__item
 		flex: 0 0 calc(100% / 3)
 		max-width: calc(100% / 3)
@@ -305,6 +459,12 @@ body
 			background: url(../img/vector2.png) no-repeat 0 0
 		&:nth-child(3)
 			background: url(../img/vector3.png) no-repeat 0 0
+		@media screen and (max-width: 767px)
+			flex: 0 0 100%
+			max-width: 100%
+			margin-bottom: 1rem
+			&:last-child
+				margin-bottom: 0
 	&__title
 		color: $default
 		font-family: $default-font
@@ -327,6 +487,10 @@ body
 		justify-content: space-between
 	.footer-logo
 		display: flex
+		@media screen and (max-width: 767px)
+			flex: 0 0 100%
+			max-width: 100%
+			justify-content: center
 		&_white
 			display: inline-block
 			color: #fff
@@ -346,8 +510,16 @@ body
 		margin: auto
 		display: flex
 		flex-wrap: wrap
+		@media screen and (max-width: 767px)
+			flex: 0 0 100%
+			max-width: 100%
 		&__schedule
 			padding-right: 25px
+			@media screen and (max-width: 767px)
+				flex: 0 0 100%
+				max-width: 100%
+				text-align: center
+				padding: 0 1rem
 			span
 				color: #fff
 				font-size: 16px
@@ -359,25 +531,40 @@ body
 			align-items: center
 			justify-content: flex-start
 			padding-left: 25px
+			&-images
+				@media screen and (max-width: 767px)
+					flex: 0 0 100%
+					max-width: 100%
+					text-align: center
 			span
 				flex: 0 0 120px
 				max-width: 120px
 				color: #fff
 				font-size: 16px
 				font-family: $default-font
-				display: block
 				margin-right: 1rem
 				display: inline-block
+				@media screen and (max-width: 767px)
+					display: none
 			img
 				margin-right: 1rem
+			@media screen and (max-width: 767px)
+				flex: 0 0 100%
+				max-width: 100%
+				justify-content: center
+				padding: 0 1rem
+				margin-top: 1rem
 	&__anchor
 		background-color: #418cef
 		border-radius: 5px
-  	width: 46px
-  	height: 46px
-  	display: flex
+		flex: 0 0 46px
+		max-width: 46px
+		height: 46px
+		display: flex
 		align-items: center
 		justify-content: center
 		padding: 11px 18px
 		margin-right: 6px
-		
+		@media screen and (max-width: 767px)
+			margin: 2rem auto 1rem
+			width: 100%

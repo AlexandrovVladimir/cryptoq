@@ -35,18 +35,36 @@
   font-family: HelveticaNeueCyr, sans-serif;
   padding-right: 1rem;
   text-transform: uppercase; }
+  @media screen and (max-width: 767px) {
+    .feedbacks__name {
+      font-size: 14px;
+      padding-right: 0.5rem; } }
 
 .feedbacks__date {
   line-height: 1; }
+  @media screen and (max-width: 767px) {
+    .feedbacks__date {
+      display: inline-block;
+      padding-right: 1rem; } }
   .feedbacks__date img {
     margin: 0 1rem; }
+    @media screen and (max-width: 767px) {
+      .feedbacks__date img {
+        margin-left: 0.5rem;
+        margin-right: 0; } }
   .feedbacks__date span {
     color: #d2d2d2;
     font-size: 14px;
     font-family: HelveticaNeueCyr, sans-serif; }
+    @media screen and (max-width: 767px) {
+      .feedbacks__date span {
+        font-size: 12px; } }
 
 .feedbacks__text {
   font-family: HelveticaNeueCyr, sans-serif; }
+  @media screen and (max-width: 767px) {
+    .feedbacks__text {
+      font-size: 14px; } }
 
 .feedbacks .feedbacks-pagination {
   display: -webkit-box;
@@ -60,8 +78,16 @@
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media screen and (max-width: 767px) {
+    .feedbacks .feedbacks-pagination {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   .feedbacks .feedbacks-pagination__item {
     margin: 10px; }
+    @media screen and (max-width: 767px) {
+      .feedbacks .feedbacks-pagination__item {
+        margin: 5px; } }
     .feedbacks .feedbacks-pagination__item_arrow {
       cursor: pointer;
       color: #5a9ff8;

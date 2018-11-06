@@ -1,6 +1,9 @@
 .conditions {
   background-color: #fff;
   padding: 50px; }
+  @media screen and (max-width: 767px) {
+    .conditions {
+      padding: 1rem; } }
   .conditions__paragraph {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,10 +32,24 @@
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center; }
+    @media screen and (max-width: 767px) {
+      .conditions__number {
+        font-size: 14px;
+        height: 20px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 20px;
+                flex: 0 0 20px;
+        max-width: 20px; } }
+  @media screen and (max-width: 767px) {
+    .conditions__text {
+      font-size: 14px; } }
   .conditions .conditions-list {
     padding-left: 45px; }
     .conditions .conditions-list span {
       padding: 5px; }
+      @media screen and (max-width: 767px) {
+        .conditions .conditions-list span {
+          font-size: 12px; } }
     .conditions .conditions-list img {
       margin-right: 5px;
       -webkit-transform: translateY(-1.5px);

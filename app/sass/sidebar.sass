@@ -4,6 +4,8 @@
 	margin-top: 54px
 	.content-form__title
 		padding-left: 1.5rem
+		@media screen and (max-width: 767px)
+			padding: 10px 1rem
 	&__discount
 		background-color: #fff
 		padding: 1.5rem
@@ -46,6 +48,8 @@
 .authorize
 	background-color: #fff
 	padding: 2rem
+	@media screen and (max-width: 767px)
+		padding: 1rem
 	&__row
 		margin-bottom: 25px
 		&_links
@@ -65,7 +69,7 @@
     	border: 1px solid #418cef
 	&__link
 		color: #5a9ff8
-	&__enter
+	&__enter, &__clear
     background-color: #3068b3
     color: #fff
     font-family: $default-font
@@ -73,13 +77,16 @@
     align-items: center
     justify-content: center
     text-transform: uppercase
-    width: 200px
+    max-width: 200px
     border-radius: 23px
     height: 45px
     margin-top: 25px
     &:hover
     	color: #fff
     	text-decoration: none
+	&__clear
+		background-color: #e7e7e7
+		color: #3068b3
 		
 
 

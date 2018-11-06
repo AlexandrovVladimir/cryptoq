@@ -25,23 +25,40 @@
 		font-family: $default-font
 		padding-right: 1rem
 		text-transform: uppercase
+		@media screen and (max-width: 767px)
+			font-size: 14px
+			padding-right: 0.5rem
 	&__date
 		line-height: 1
+		@media screen and (max-width: 767px)
+			display: inline-block
+			padding-right: 1rem
 		img
 			margin: 0 1rem
+			@media screen and (max-width: 767px)
+				margin-left: 0.5rem
+				margin-right: 0
 		span
 			color: #d2d2d2
 			font-size: 14px
 			font-family: $default-font
+			@media screen and (max-width: 767px)
+				font-size: 12px
 	&__text
 		font-family: $default-font
+		@media screen and (max-width: 767px)
+			font-size: 14px
 	.feedbacks-pagination
 		display: flex
 		align-items: center
 		justify-content: flex-start
 		flex-wrap: wrap
+		@media screen and (max-width: 767px)
+			justify-content: space-between
 		&__item
 			margin: 10px
+			@media screen and (max-width: 767px)
+				margin: 5px
 			&_arrow
 				cursor: pointer
 				color: #5a9ff8

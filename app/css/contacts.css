@@ -1,6 +1,9 @@
 .contacts .contacts-info {
   background-color: #fff;
   padding: 25px; }
+  @media screen and (max-width: 767px) {
+    .contacts .contacts-info {
+      padding: 1rem; } }
   .contacts .contacts-info__part {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11,18 +14,40 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+    @media screen and (max-width: 767px) {
+      .contacts .contacts-info__part img {
+        width: 30px; } }
   .contacts .contacts-info__text {
     display: inline-block;
     padding-left: 1rem; }
+    @media screen and (max-width: 767px) {
+      .contacts .contacts-info__text {
+        font-size: 14px; } }
 
 .contacts__text {
   margin-bottom: 1rem; }
 
 .contacts .operations-sales__row {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .contacts .operations-sales__link {
   display: inline-block;
   padding-left: 1rem; }
+  @media screen and (max-width: 767px) {
+    .contacts .operations-sales__link {
+      font-size: 12px;
+      margin-left: auto; } }
+
+@media screen and (max-width: 767px) {
+  .contacts .operations-sales__text {
+    font-size: 12px; } }

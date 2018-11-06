@@ -11,12 +11,15 @@
 			font-family: $default-font
 			margin-top: 0.5rem
 			padding: 1rem
+			&__text
+				@media screen and (max-width: 767px)
+					font-size: 14px
 		&:not(:first-child)
 			margin-top: 1.5rem
 	&__text
 		display: block
 		background: #fff url('../img/tilda.png') no-repeat 98% center
-		border: 1px solid transoarent
+		border: 1px solid transparent
 		border-bottom-right-radius: 50px
 		border-top-right-radius: 50px
 		cursor: pointer
@@ -25,3 +28,5 @@
 		transition: all 0.5s linear
 		&:hover
 			background-color: darken(#fff, 2.5%)
+		@media screen and (max-width: 767px)
+			font-size: 14px
