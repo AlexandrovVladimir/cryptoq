@@ -1613,6 +1613,47 @@ body {
       .exchange-page .operations-sales__text {
         font-size: 12px; } }
 
+.ui-icon.bitcoinbtc, .ui-widget-content .ui-icon.bitcoinbtc {
+  background: url("../img/icon1.png") no-repeat;
+  background-size: cover; }
+
+.ui-button .ui-icon {
+  display: none; }
+
+.ui-selectmenu-button.ui-button {
+  background: #fff url("../img/select.png") no-repeat 95% 50%;
+  border: 1px solid #b4b4b4;
+  border-radius: 23px;
+  color: #5e5e5e;
+  display: inline-block;
+  font-family: HelveticaNeueCyr, sans-serif;
+  height: 46px;
+  padding: 10px 19px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 290px;
+          flex: 0 0 290px;
+  max-width: 290px; }
+  .ui-selectmenu-button.ui-button:hover, .ui-selectmenu-button.ui-button:focus, .ui-selectmenu-button.ui-button:active {
+    background: #fff url("../img/select.png") no-repeat 95% 50%;
+    border: 1px solid #418cef;
+    color: #5e5e5e; }
+  @media screen and (max-width: 767px) {
+    .ui-selectmenu-button.ui-button {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
+  .ui-selectmenu-button.ui-button .ui-selectmenu-text {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .ui-selectmenu-button.ui-button:hover {
+    background-color: #fff; }
+
 .exchange {
   background-color: #fff;
   padding: 25px; }
@@ -2095,6 +2136,9 @@ a {
 
 section {
   position: relative; }
+
+select, input {
+  cursor: pointer; }
 
 .table {
   margin-bottom: 0; }

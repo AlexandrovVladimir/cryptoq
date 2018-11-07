@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
   <meta property="og:image" content="img/favicon/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#000">
   <!-- Windows Phone -->
@@ -119,9 +120,13 @@
               <div class="content-form__title">Отдаете <img src="img/give.png" class="ml-4" alt="give"></div>
               <div class="exchange">
                 <div class="exchange__row">
-                  <select name="" class="exchange__select">
-                    <option value="bitcoin">Bitcoin BTC</option>
-                    <option value="bitcoin">Bitcoin BTC</option>
+                  <!--<select name="" class="exchange__select">-->
+                    <!--<option value="bitcoin">Bitcoin BTC</option>-->
+                    <!--<option value="bitcoin">Bitcoin BTC</option>-->
+                  <!--</select>-->
+                  <select name="filesB" id="bitcoin-select">
+                    <option value="bitcoinbtc" data-class="bitcoinbtc">Bitcoin BTC</option>
+                    <option value="grn" data-class="grn">Bitcoin BTC</option>
                   </select>
                   <label class="exchange__label">Сумма:</label>
                   <input type="text" class="exchange__input" value="1">
@@ -254,6 +259,7 @@
 
 
 <script src="js/libs.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
